@@ -34,7 +34,21 @@ class Persian
 		return (string) str_replace($find,$replace,$numbers);
 	}
 
-	public function text($text){
+	public function numbers_to_english($numbers)
+	{
+		$find    = array('٠', '١', '٢', '٣', '٤', '٥', '٦', '٧', '٨', '٩');
+		$replace = array('0', '1', '2', '3', '4', '5', '6', '7', '8', '9');
+
+		$numbers = str_replace($find,$replace,$numbers);
+
+		$find    = array('۰', '۱', '۲', '۳', '۴', '۵', '۶', '۷', '۸', '۹');
+		$replace = array('0', '1', '2', '3', '4', '5', '6', '7', '8', '9');
+
+		return (string) str_replace($find,$replace,$numbers);
+	}
+
+	public function text($text)
+	{
 
 		$from = array(
 			// collection 1
@@ -203,4 +217,4 @@ class Persian
 }
 
 /* End of file Persian.php */
-/* Location: .//C/xampp/htdocs/Codeigniter-Persian/Persian.php */
+/* Location: /Codeigniter-Persian/Persian.php */
