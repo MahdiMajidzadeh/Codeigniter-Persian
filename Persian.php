@@ -214,6 +214,14 @@ class Persian
 		return (string) $matches[0];
 	}
 
+	public function standard($string)
+	{
+		$string = $this->numbers_to_english($string);
+		$string = $this->text($string);
+
+		return $string;
+	}
+
 }
 
 /* End of file Persian.php */
