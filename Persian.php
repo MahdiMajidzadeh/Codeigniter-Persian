@@ -204,13 +204,7 @@ class Persian
             $text = str_replace($from[$i], $to[$i], $text);
         }
 
-        preg_match('/([!\w\s{*}]+)/ui', $text, $matches);
-
-        if (!is_array($matches) || count($matches) < 1) {
-            return;
-        }
-
-        return (string) $matches[0];
+        return $text
     }
 
     public function standard($string)
