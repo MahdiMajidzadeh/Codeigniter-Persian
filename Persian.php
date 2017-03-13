@@ -35,7 +35,7 @@ class Persian
         return (string) str_replace($find, $replace, $numbers);
     }
 
-    public function numbers_to_english($numbers)
+    public function numbers_to_en($numbers)
     {
         $find = ['٠', '١', '٢', '٣', '٤', '٥', '٦', '٧', '٨', '٩'];
         $replace = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
@@ -204,12 +204,20 @@ class Persian
             $text = str_replace($from[$i], $to[$i], $text);
         }
 
-        return $text
+        return $text;
     }
 
     public function standard($string)
     {
-        $string = $this->numbers_to_english($string);
+        $string = $this->numbers_to_en($string);
+        $string = $this->text($string);
+
+        return $string;
+    }
+
+    public function allpersian($string)
+    {
+        $string = $this->numbers($string);
         $string = $this->text($string);
 
         return $string;
