@@ -1,10 +1,10 @@
 # Codeigniter-Persian [![StyleCI](https://styleci.io/repos/76458054/shield?branch=master)](https://styleci.io/repos/76458054)
 A Codeigniter library to work with Persian characters ahd normalize data entries
 
-##how to install
+## how to install
 Copy `Persian.php` to `application/libraries` of your own project.
 
-##how to use
+## how to use
 First, load library:
 ```
 $this->load->library('persian');
@@ -29,5 +29,5 @@ $this->persian->text($text);
 
 * `$this->persian->allpersian($string)` convert Arabic characters to Persian characters and convert numbers to Persian numbers - best way to show data ti users
 
-##Contributor
+## Contributor
 - Mahdi Majidzadeh ([github](https://github.com/MahdiMajidzadeh))
