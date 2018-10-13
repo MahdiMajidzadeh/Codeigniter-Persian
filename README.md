@@ -1,4 +1,9 @@
-# Codeigniter-Persian [![StyleCI](https://styleci.io/repos/76458054/shield?branch=master)](https://styleci.io/repos/76458054)
+# Codeigniter-Persian 
+
+[![StyleCI](https://styleci.io/repos/76458054/shield?branch=master)](https://styleci.io/repos/76458054)
+
+## This library not maintained eny more
+
 A Codeigniter library to work with Persian characters ahd normalize data entries
 
 ## how to install
